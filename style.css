@@ -1,0 +1,83 @@
+.flex {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+.flex .face {
+  width: 320px;
+  height: 320px;
+  border-radius: 100%;
+  box-shadow: 0 5px 38px 0 rgba(245, 245, 245, 0.28);
+  background: white;
+}
+.flex .face .head {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 200px;
+}
+.flex .face .head .eye {
+  width: 80px;
+  height: 80px;
+  border-radius: 100%;
+  margin: 15px;
+  position: relative;
+  overflow: hidden;
+  background: linear-gradient(to right, #208ab4, #6fbfff);
+  box-shadow: 0 5px 6px 0 rgba(32, 33, 36, 0.28);
+}
+.flex .face .head .eye .ratina {
+  background: black;
+  width: 32px;
+  height: 32px;
+  border-radius: 100%;
+  position: absolute;
+  left: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.flex .face .bottom {
+  height: 200px;
+  display: flex;
+  justify-content: center;
+}
+.flex .face .bottom .lips {
+  transition: 0.5s;
+  width: 75px;
+  height: 22px;
+  background: black;
+  border-radius: 10px;
+  display: flex;
+  overflow: hidden;
+  align-items: center;
+  flex-direction: column;
+}
+.flex .face .bottom .lips .upper, .flex .face .bottom .lips .bottom {
+  display: flex;
+}
+.flex .face .bottom .lips .upper div, .flex .face .bottom .lips .bottom div {
+  width: 6px;
+  height: 7px;
+  background: white;
+  margin: 1px;
+}
+.flex .face .bottom .lips .upper div {
+  border-bottom-left-radius: 2px;
+  border-bottom-right-radius: 2px;
+}
+.flex .face .bottom .lips .bottom div {
+  border-top-left-radius: 2px;
+  border-top-right-radius: 2px;
+}
+.flex .face .bottom .lips .bottom {
+  align-items: flex-end;
+}
+
+body {
+  margin: 0;
+  background: black;
+}
+
+/*# sourceMappingURL=style.css.map */

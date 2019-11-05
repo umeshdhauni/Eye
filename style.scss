@@ -1,0 +1,95 @@
+.flex{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    .face{
+        width: 320px;
+        height: 320px;
+        border-radius: 100%;
+        // box-shadow: 0 5px 6px 0 rgba(32,33,36,0.28);
+        box-shadow: 0 5px 38px 0 rgba(245, 245, 245, 0.28);
+        background: white;
+        // background: red;
+        .head{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 200px;
+            .eye{
+                // background: black;
+                // border: 10px solid black;
+                width: 80px;
+                height: 80px;
+                border-radius: 100%;
+                margin: 15px;
+                position: relative;
+                overflow: hidden;
+                background: linear-gradient(to right, #208ab4, #6fbfff);            
+                box-shadow: 0 5px 6px 0 rgba(32,33,36,0.28);
+                
+                .ratina{
+                background: black;
+                width: 32px;
+                height: 32px;
+                border-radius: 100%;
+                position: absolute;
+                left: 0;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                // .small-dot{
+                //     width: 4px;
+                //     height: 4px;
+                //     background: white;
+                //     border-radius: 100%;
+                // }
+                }
+            }
+        }
+        .bottom{
+            height: 200px;
+            display: flex;
+            justify-content: center;
+            .lips{
+                transition: 0.5s;
+                width: 75px;
+                height: 22px;
+                background: black;
+                border-radius: 10px;
+                display: flex;
+                overflow: hidden;
+                align-items: center;
+                flex-direction: column;
+                .upper,.bottom{
+                    display: flex;
+                }
+                .upper div,.bottom div{
+                    width: 6px;
+                    height: 7px;
+                    background: white;
+                    margin: 1px;
+                }
+                .upper div{
+                    border-bottom-left-radius: 2px;
+                    border-bottom-right-radius: 2px;
+                }
+                .bottom div{
+                    border-top-left-radius: 2px;
+                    border-top-right-radius: 2px;
+                }
+                .bottom{
+                    align-items: flex-end;
+
+                }
+            }
+        }
+    }
+}
+
+
+body{
+    margin: 0;
+    background: black;
+}
+

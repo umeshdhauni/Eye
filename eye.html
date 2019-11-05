@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"
+        integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <div class="flex">
+        <div class="face">
+            <div class="head">
+                <div class="eye">
+                    <div class="ratina">
+                        <div class="small-dot">
+
+                        </div>
+                    </div>
+                </div>
+                <div class="eye">
+                    <div class="ratina">
+                        <div class="small-dot">
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="bottom">
+                <div>
+                    <!-- <div class="nose">
+
+                    </div> -->
+                    <div class="lips">
+                        <div class="upper">
+                            <div></div>
+                            <div></div>
+                            <div></div>
+                            <div></div>
+                            <div></div>
+                            <div></div>
+                            <div></div>
+                            <div></div>
+
+
+                        </div>
+                        <div class="bottom">
+                            <div></div>
+                            <div></div>
+                            <div></div>
+                            <div></div>
+                            <div></div>
+                            <div></div>
+                            <div></div>
+                            <div></div>
+                            
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+<script>
+
+    $(document).ready(function () {
+        $(document).mousemove(function (event) {
+            let docWidth = $(document).width();
+            let docHeight = $(document).height();
+            let xPosition = (80 * event.originalEvent.clientX) / docWidth;
+            let yPosition = (80 * event.originalEvent.clientY) / docHeight;
+            $('.ratina').css('left', xPosition);
+            $('.ratina').css('top', yPosition);
+        });
+    })
+
+</script>
+
+</html>
